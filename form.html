@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <title> Hire Me!</title>
+    <link rel="icon" href="./img/Titlebg.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
+	<style>
+      html, body {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      }
+	  body, div, h1, form, input, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: #666;
+      }
+      
+	  h1 {
+      padding: 10px 0;
+      font-size: 32px;
+      font-weight: 300;
+      text-align: center;
+      }
+	   p {
+      font-size: 12px;
+      }
+      hr {
+      color: #a9a9a9;
+      opacity: 0.3;
+      }
+	  form {
+      
+      margin: 0 30px;
+      }
+	  button {
+      width: 100%;
+      padding: 10px 0;
+      margin: 10px auto;
+      border-radius: 5px; 
+      border: none;
+      background: #1c87c9; 
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      }
+	  .main-block {
+      max-width: 650px; 
+      min-height: 450px; 
+      margin: auto;
+      border-radius: 5px; 
+      border: solid 2px #ccc;
+      box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+	  }
+	  .inner{
+	
+	font-family: chiller;
+	font-size: 34px;
+	color: red;
+}
+.logo{
+	color: black;
+	font-family: comic sans ms;
+	text-align: center;
+}
+      
+    </style>
+  </head>
+  <body>
+  <div class = "head">
+
+<div class="center">
+</div>
+</div>
+    <div class="main-block">
+      <h3 class="logo"> Hire <span class="inner">ME</span> !<h3>
+      <form action="GetHired.php" method="post">
+        <hr>
+        <div class="account-type">
+          <input type="radio" value="none" id="radioOne" name="account" checked/>
+          <label for="radioOne" class="radio">Company</label>
+          <input type="radio" value="none" id="radioTwo" name="account" />
+          <label for="radioTwo" class="radio">Self</label>
+        </div>
+        <hr>
+        <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+        <input type="text" name="email" id="name" placeholder="Company Email" required/><br><br>
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="name" id="name" placeholder="Recruiter Name" required/><br><br>
+        <label for="Portfolio"><b>Company website</b></label><br>
+        <input name="Portfolio" type="text" maxlength="255" value="http://" style="width:100%;max-width: 535px" />
+       
+        <hr>
+        <div class="gender">
+          <h3>Are You Willing To Relocate</h3>
+		      <input type="radio" value="none" id="male" name="gender" checked/>
+          <label for="male" class="radio">Yes</label>
+          <input type="radio" value="none" id="female" name="gender" />
+          <label for="female" class="radio">No</label><br><br>
+		  <input type="radio" value="none" id="female" name="gender" />
+          <label for="female" class="radio">May Be</label><br><br>
+		  <p>Attach Your Company's Application Form </p><br>
+		  <input type="file" value="file" id="file" name="ChooseFile" />
+		  
+		  
+        </div>
+        <hr>
+        <div class="btn-block">
+          <p>By clicking Register, you agree to submit your details to <a href="file:///C:/Users/rathe/Documents/Ratheesh%20got%20bored/Web%20tech%20project/Ratheesh's%20portfolio/Index.html#contact">Ratheesh Kumar</a>.</p><br>
+          <button type="submit" name="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
