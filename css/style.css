@@ -9,7 +9,10 @@
 /* import global styling */ 
 @import url(./partials/_global.css);
 
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 /* start navigation */ 
 
 .header_area .main-menu .navbar .navbar-brand{
@@ -99,6 +102,25 @@
 
 /* Start About Area */ 
 
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* Space between the image and the skills section */
+}
+
+.skills, .qualities {
+    flex: 1;
+    padding: 0 10px; /* Space between the two sections */
+}
+
+.skills {
+    border-right: 1px solid #ddd; /* Optional: Adds a border to separate sections */
+}
+
+.btn.button.primary-button {
+    margin-top: 20px; /* Space between the skills section and the button */
+}
+
 .site-main .about-area{
     padding: 8rem 5rem;
 }
@@ -113,20 +135,12 @@
     padding: .4rem 0;
 }
 
+
+
 /* End About Area */ 
 
 
 /* Start Brand Area */ 
-
-.site-main .brand-area{
-    padding: 1rem 20rem;
-    margin-bottom: 4rem;
-}
-
-.site-main .brand-area .first-row .col-lg-4{
-    display: flex;
-    justify-content: center;
-}
 
 .site-main .brand-area .first-row .col-lg-4 > .single-brand{
     border: 1px solid var(--border-color);
@@ -137,6 +151,11 @@
     height: 100px;
     cursor: pointer;
     transition: transform .4s ease;
+
+    /* Added Flexbox for centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .site-main .brand-area .first-row .col-lg-4 > .single-brand > img{
@@ -145,20 +164,13 @@
 
 .site-main .brand-area .first-row .col-lg-4 > .single-brand:hover{
     box-shadow: var(--box-shadow);
-    transform: scale(1.1);
+    transform: scale(2);
 }
 
 .site-main .brand-area .first-row .col-lg-4 > .single-brand:hover > img{
-    filter: brightness(0.15);
+    filter: brightness(1.15);
 }
 
-.site-main .brand-area .experience-area{
-    padding-left: 1rem;
-}
-
-.site-main .brand-area .experience-area span{
-    display: block;
-}
 
 .site-main .brand-area .experience-area .years-area{
     background: url(../img/client-info-bg.png) no-repeat 45px 20px;
@@ -229,17 +241,28 @@
 
 .site-main .project-area{
     padding: 4rem 0;
+    
+}
+.site-main .project-area .grid .our-project .img img {
+    border-radius: 15px; /* Adjust the value as needed */
+    transition: border-radius 0.4s ease; /* Smooth transition for hover */
 }
 
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+    border-radius: 15px; /* Ensure it maintains the rounded corners on hover */
+}
 .site-main .project-area .button-group button{
     background: transparent;
     border: none;
+    
     font: normal 500 16px/130px var(--roboto);
     text-transform: uppercase;
 }
 
 .site-main .project-area .button-group button + button{
     padding-left: 3rem;
+    
 }
 
 .site-main .project-area .grid .our-project > .title h4{
@@ -248,6 +271,7 @@
 
 .site-main .project-area .grid .our-project .img a:hover img{
     filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+    
 }
 
 
