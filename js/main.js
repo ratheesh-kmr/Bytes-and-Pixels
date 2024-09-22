@@ -60,7 +60,7 @@ $(document).ready(function () {
 
     navbarFixed();
     
-            const scriptURL = '<https://script.google.com/macros/s/AKfycbwDFCo0C0Jan1LexTjQEbp1tXJ58y-WilPdIMsujX3oMMqaLA7l-kVFCIp2V2EmJ-7q/exec>'
+            const scriptURL = '<https://script.google.com/macros/s/AKfycbzYVZcCUxOqkh6GxpoWGSkPoCsT6uF4TAhjx_j9MTyWf6wKtMV8BsjVLR_VF-pZkGYxlg/exec>'
             const form = document.forms['submit-to-google-sheet']
           
             form.addEventListener('submit', e => {
