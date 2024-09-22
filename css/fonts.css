@@ -2,8 +2,11 @@
 
 /* @font-face */ 
 
-@font-face{
+@font-face {
     font-family: "Roboto";
-    src: '../fonts/Roboto/Roboto-Regular.ttf';
+    src: url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'), /* Modern browsers */
+         url('../fonts/Roboto/Roboto-Regular.woff') format('woff'),   /* Older browsers */
+         url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype'); /* Fallback for legacy support */
+    font-weight: normal;
+    font-style: normal;
 }
-
