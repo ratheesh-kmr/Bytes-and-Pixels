@@ -82,7 +82,7 @@ $(document).ready(function () {
            
  document.getElementById("downloadBtn").addEventListener("click", function() {
     // Image URL
-    var imageUrl = "https://drive.google.com/file/d/1XTSOzXMde2rvDiibTseLqhVtd-QZVwbC/view?usp=sharing";
+    var imageUrl = "https://drive.google.com/file/d/1Y6vLZKb3qRNasmNMECtaIXnMwd4avVIf/view?usp=sharing";
 
     // Create a temporary <a> element
     var link = document.createElement("a");
@@ -106,6 +106,5 @@ $(document).ready(function () {
         window.open(
         "form.html", "_blank");
     };
-
                
                 
